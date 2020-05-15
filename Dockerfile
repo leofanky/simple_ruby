@@ -7,5 +7,6 @@ COPY . /var/app
 WORKDIR /var/app
 
 RUN bundle install
+EXPOSE 9090
 
 CMD rails s -p 9090 -b 0.0.0.0
