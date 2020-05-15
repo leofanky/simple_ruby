@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage('Build') { 
             steps{
-                sh 'tar czvf example2.tar.gz *.rb'
+                sh 'tar czvf example2.tar.gz *.rb Dockerfile'
             }
         }        
         stage('Publish artefact') {
